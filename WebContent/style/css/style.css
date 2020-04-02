@@ -15,13 +15,13 @@ table{
 th {
 	
 	border: 1px solid #4CAF50;
+	background-color: #00ffff;
 	padding: 5px;
-	background-color: #4CAF50;
-	color: white;
+	
 }
 td{
 	border: 1px solid #4CAF50;
-	background-color: #4CAF50;
+	background-color: #ff00ff;
 	color: white;
 }
 
