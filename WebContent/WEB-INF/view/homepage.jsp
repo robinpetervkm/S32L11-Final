@@ -1,12 +1,51 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+ 
 <!DOCTYPE html>
+ 
 <html>
+ 
 <head>
-<meta charset="ISO-8859-1">
-<title>Hello </title>
+<title>Product list</title>
+ 
+<!-- reference our style sheet -->
+ 
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/style/css/style.css" />
+ 
 </head>
+ 
 <body>
-<h6>Hello World</h6>
+ 
+	<h2>List of available products</h2>
+	
+    <!-- div for apply styling to table  -->
+	<div class="datagrid">
+		<table>
+			<tr>
+				<th>Product ID</th>
+                <th>Product Name</th>
+                <th>Cost($)</th> 
+			</tr>
+ 
+			<!-- loop over and print our customers -->
+			<c:forEach var="product" items="${products}">
+ 
+				<tr>
+				<td>${product.productID}</td>
+				<td>${product.productName}</td>
+				<td>${product.cost}</td>
+				</tr>
+ 
+			</c:forEach>
+		</table>
+	</div>
 </body>
 </html>
+
+
+
+
+
+
+
+

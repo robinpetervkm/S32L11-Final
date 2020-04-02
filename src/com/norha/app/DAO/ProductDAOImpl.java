@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.norha.app.entity.Product;
 
+
 public class ProductDAOImpl implements ProductDAO {
 
 	@Autowired
